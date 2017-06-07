@@ -1,6 +1,6 @@
 const getUserObj = (req) => {
     userObj = {};
-    const rawIp = req.ip;
+    const rawIp = req.connection.remoteAddress;
     const rawLang = req.headers["accept-language"];
     const rawOs = req.headers["user-agent"]
     
